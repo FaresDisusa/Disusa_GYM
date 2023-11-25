@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.DisusaGYM" parent="android:Theme.Material.Light.NoActionBar" />
+
+
+    <!-- Home Menu -->
+    <!-- Header -->
+    <style name="hello_MR_40_LG"> <!-- MR = Montserrat-Regular, LG = light_gray -->
+        <item name="android:textColor">@color/light_gray</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/Montserrat_Regular</item>
+    </style>
+
+    <style name="username_hello" parent="hello_MR_40_LG">
+        <item name="android:fontFamily">@font/Montserrat_ExtraBold</item>
+    </style>
+
+    <style name="coin_counter_AR_50_W"> <!-- AR = Arial-regular, W = white -->
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">19sp</item>
+        <item name="android:fontFamily">@font/Arial_Regular</item>
+    </style>
+
+
+    <!-- Mid Menus -->
+    <style name="today_date" parent="coin_counter_AR_50_W">
+        <item name="android:textColor">@color/blue_gray</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="steps_and_workout_today_username_profil_MB_80_W">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:fontFamily">@font/Montserrat_Bold</item>
+    </style>
+
+    <style name="second_menus_shop_workouts_date_calender_label_set_rep" parent="steps_and_workout_today_username_profil_MB_80_W">
+        <item name="android:textSize">19sp</item>
+    </style>
+
+
+    <!-- Calender Menu -->
+    <!-- Header -->
+    <style name="month_week_not_selected" parent="hello_MR_40_LG">
+        <item name="android:textColor">@color/blue_gray</item>
+        <item name="android:textSize">19sp</item>
+    </style>
+
+    <style name="month_week_selected" parent="hello_MR_40_LG">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">19sp</item>
+    </style>
+
+    <style name="num_month_not_selected" parent="steps_and_workout_today_username_profil_MB_80_W">
+        <item name="android:textColor">@color/slate_gray</item>
+        <item name="android:textSize">19sp</item>
+    </style>
+
+    <style name="exercice_noun_info" parent="steps_and_workout_today_username_profil_MB_80_W">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="more_info" parent="steps_and_workout_today_username_profil_MB_80_W">
+        <item name="android:textColor">@color/blue_gray</item>
+        <item name="android:textSize">8sp</item>
+    </style>
+
+
+    <!-- More info exercice -->
+    <style name="exercice_noun" parent="steps_and_workout_today_username_profil_MB_80_W">
+        <item name="android:textSize">23sp</item>
+    </style>
+
+    <style name="info_rep_set" parent="steps_and_workout_today_username_profil_MB_80_W">
+        <item name="android:textColor">@color/light_blue_gray</item>
+        <item name="android:textSize">23sp</item>
+    </style>
+
+    <style name="info_group_muscle_MM_40_LBG"> <!-- MM = Montserrat-Medium, LBG = light_blue_gray -->
+        <item name="android:textColor">@color/light_blue_gray</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/Montserrat_Medium</item>
+    </style>
+
+    <style name="view_progress_txt" parent="steps_and_workout_today_username_profil_MB_80_W">
+        <item name="android:textColor">@color/blue_gray</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+    
+
+    <!-- Profil -->
+    <style name="label_height_weight" parent="steps_and_workout_today_username_profil_MB_80_W">
+        <item name="android:textColor">@color/violet_txt</item>
+        <item name="android:textSize">23sp</item>
+    </style>
+
+    <style name="info_height_weight_profil" parent="steps_and_workout_today_username_profil_MB_80_W">
+        <item name="android:textColor">@color/light_blue_gray</item>
+        <item name="android:textSize">21sp</item>
+    </style>
+
+    <style name="menus_profil_MSB_60_W"> <!-- MSB = Montserrat-SemiBold, W = white -->
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">23sp</item>
+        <item name="android:fontFamily">@font/Montserrat_SemiBold</item>
+    </style>
+
+    <style name="menus_profil_subscription" parent="menus_profil_MSB_60_W">
+        <item name="android:textSize">19sp</item>
+    </style>
+
+    <style name="txt_follow_us" parent="coin_counter_AR_50_W">
+        <item name="android:textSize">15sp</item>
+    </style>
+</resources>

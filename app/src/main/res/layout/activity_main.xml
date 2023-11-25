@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/greating"
+        style="@style/hello_MR_40_LG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92.571dp"
+        android:layout_marginTop="38dp"
+        android:text="@string/hello" />
+
+    <TextView
+        android:id="@+id/username"
+        style="@style/username_hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="139.810dp"
+        android:layout_marginTop="38dp"
+        android:text="@string/username" />
+
+    <TextView
+        android:id="@+id/coins_number"
+        style="@style/coin_counter_AR_50_W"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="306.667dp"
+        android:layout_marginTop="36.571dp"
+        android:text="@string/coins"/>
+
+    <FrameLayout
+        android:id="@+id/main_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="110.095dp"/>
+</RelativeLayout>
