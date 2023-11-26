@@ -5,6 +5,7 @@
     android:layout_height="match_parent">
 
     <ImageView
+        android:contentDescription="@string/muscle_man_home"
         android:id="@+id/muscle_pic_home"
         android:layout_width="266.667dp"
         android:layout_height="266.667dp"

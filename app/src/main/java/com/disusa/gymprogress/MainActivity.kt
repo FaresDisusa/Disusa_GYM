@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val transaction = supportFragmentManager.beginTransaction()
-        transaction.replace(R.id.main_fragment,HomeFragment)
+        transaction.replace(R.id.main_fragment, HomeFragment())
         transaction.addToBackStack(null)
         transaction.commit()
     }

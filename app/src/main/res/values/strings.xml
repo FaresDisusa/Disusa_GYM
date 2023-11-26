@@ -4,6 +4,7 @@
     <string name="hello">Hello,</string>
     <string name="user_greeting">Hello, %s</string>
     <string name="username">User</string>
+    <string name="muscle_man_home">Muscle Man</string>
     <string name="coins">49.3</string>
     <string name="Nb_steps">%s STEPS</string>
     <string name="day">Monday</string>
