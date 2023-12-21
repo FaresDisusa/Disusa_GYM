@@ -1,13 +1,222 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!-- Home pic ( muscle man ) -->
     <ImageView
         android:contentDescription="@string/muscle_man_home"
         android:id="@+id/muscle_pic_home"
-        android:layout_width="266.667dp"
-        android:layout_height="266.667dp"
+        android:layout_width="match_parent"
+        android:layout_height="272.506dp"
         android:src="@drawable/muscle_pic_degrade" />
-</LinearLayout>
+
+    <!-- Steps bt  -->
+    <ImageView
+        android:id="@+id/background_steps_bt"
+        android:layout_width="346.681dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/muscle_pic_home"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21.022dp"
+        android:background="@drawable/greating_back"
+        android:contentDescription="@string/bt_background_description"
+        android:elevation="1dp"
+        tools:ignore="RedundantDescriptionCheck" />
+
+    <ImageView
+        android:id="@+id/steps_icon"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:layout_alignStart="@+id/background_steps_bt"
+        android:layout_alignTop="@+id/background_steps_bt"
+        android:layout_marginStart="31.144dp"
+        android:layout_marginTop="24.526dp"
+        android:contentDescription="@string/steps_icon"
+        android:elevation="2dp"
+        android:src="@drawable/steps_degrade" />
+
+    <TextView
+        android:id="@+id/nb_steps"
+        style="@style/steps_and_workout_today_username_profil_MB_80_W"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/background_steps_bt"
+        android:layout_alignTop="@+id/background_steps_bt"
+        android:layout_marginStart="99.270dp"
+        android:layout_marginTop="27dp"
+        android:elevation="2dp"
+        android:text="@string/Nb_steps" />
+
+    <Button
+        android:id="@+id/bt_steps_today"
+        android:layout_width="346.681dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/muscle_pic_home"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21.022dp"
+        android:background="@drawable/bt_trans_home"
+        android:elevation="3dp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <!-- Workout today bt -->
+    <ImageView
+        android:id="@+id/background_workout_today_bt"
+        android:layout_width="346.861dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/background_steps_bt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21.022dp"
+        android:background="@drawable/greating_back"
+        android:contentDescription="@string/bt_background_description"
+        android:elevation="1dp"
+        tools:ignore="RedundantDescriptionCheck" />
+
+    <TextView
+        android:id="@+id/day_workout_today_bt"
+        style="@style/today_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/background_workout_today_bt"
+        android:layout_alignTop="@+id/background_workout_today_bt"
+        android:layout_marginStart="14.015dp"
+        android:layout_marginTop="9.343dp"
+        android:elevation="2dp"
+        android:text="@string/day" />
+
+    <ImageView
+        android:id="@+id/bar_degrade"
+        android:contentDescription="@string/barre_degrade_description"
+        android:layout_width="321.557dp"
+        android:layout_height="46.715dp"
+        android:layout_alignStart="@+id/background_workout_today_bt"
+        android:layout_alignTop="@+id/background_workout_today_bt"
+        android:layout_marginStart="12.847dp"
+        android:layout_marginTop="7.786dp"
+        android:elevation="2dp"
+        android:src="@drawable/ligne_per" />
+
+    <TextView
+        android:id="@+id/workout_today_muscle"
+        style="@style/steps_and_workout_today_username_profil_MB_80_W"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/background_workout_today_bt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40.876dp"
+        android:text="@string/workout_today"
+        android:elevation="2dp"/>
+
+    <Button
+        android:id="@+id/bt_workout_today"
+        android:layout_width="346.681dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/background_steps_bt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21.022dp"
+        android:background="@drawable/bt_trans_home"
+        android:elevation="3dp"
+        tools:ignore="SpeakableTextPresentCheck"/>
+
+    <!-- Workouts bt -->
+    <ImageView
+        android:id="@+id/background_workouts_bt"
+        android:layout_width="171.290dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/background_workout_today_bt"
+        android:layout_alignStart="@+id/background_workout_today_bt"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="26.083dp"
+        android:background="@drawable/greating_back"
+        android:contentDescription="@string/bt_background_description"
+        android:elevation="1dp"
+        tools:ignore="RedundantDescriptionCheck" />
+
+    <ImageView
+        android:id="@+id/workouts_icon"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:layout_alignStart="@+id/background_workouts_bt"
+        android:layout_alignTop="@+id/background_workouts_bt"
+        android:layout_marginStart="13.625dp"
+        android:layout_marginTop="25.526dp"
+        android:contentDescription="@string/workouts_icon_description"
+        android:elevation="2dp"
+        android:src="@drawable/exercices_degrade" />
+
+    <TextView
+        android:id="@+id/workouts_txt"
+        style="@style/second_menus_shop_workouts_date_calender_label_set_rep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/background_workouts_bt"
+        android:layout_alignTop="@+id/background_workouts_bt"
+        android:layout_marginStart="66.959dp"
+        android:layout_marginTop="35dp"
+        android:elevation="2dp"
+        android:text="@string/work_bt" />
+
+    <Button
+        android:id="@+id/bt_workouts"
+        android:layout_width="171.290dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/background_workout_today_bt"
+        android:layout_alignStart="@+id/background_workout_today_bt"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="26.083dp"
+        android:background="@drawable/bt_trans_home"
+        android:elevation="3dp"
+        tools:ignore="SpeakableTextPresentCheck"/>
+
+    <!-- Shop bt -->
+    <ImageView
+        android:id="@+id/background_shop_bt"
+        android:layout_width="171.290dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/background_workout_today_bt"
+        android:layout_alignEnd="@+id/background_workout_today_bt"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="26.083dp"
+        android:background="@drawable/greating_back"
+        android:contentDescription="@string/bt_background_description"
+        android:elevation="1dp"
+        tools:ignore="RedundantDescriptionCheck" />
+
+    <ImageView
+        android:id="@+id/shop_icon"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:layout_alignStart="@+id/background_shop_bt"
+        android:layout_alignTop="@+id/background_shop_bt"
+        android:layout_marginStart="13.625dp"
+        android:layout_marginTop="24.526dp"
+        android:contentDescription="@string/shop_icon_description"
+        android:elevation="2dp"
+        android:src="@drawable/shop_degrade" />
+
+    <TextView
+        android:id="@+id/shop_txt"
+        style="@style/second_menus_shop_workouts_date_calender_label_set_rep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/background_shop_bt"
+        android:layout_alignTop="@+id/background_shop_bt"
+        android:layout_marginStart="87.981dp"
+        android:layout_marginTop="35dp"
+        android:elevation="2dp"
+        android:text="@string/shop_bt" />
+
+    <Button
+        android:id="@+id/bt_shop"
+        android:layout_width="171.290dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/background_workout_today_bt"
+        android:layout_alignEnd="@+id/background_workout_today_bt"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="26.083dp"
+        android:background="@drawable/bt_trans_home"
+        android:elevation="3dp"
+        tools:ignore="SpeakableTextPresentCheck"/>
+</RelativeLayout>

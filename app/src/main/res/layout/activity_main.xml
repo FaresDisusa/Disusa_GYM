@@ -1,40 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/dark_blue_gray">
 
-    <TextView
-        android:id="@+id/greating"
-        style="@style/hello_MR_40_LG"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="92.571dp"
-        android:layout_marginTop="38dp"
-        android:text="@string/hello" />
+    <ImageView
+        android:id="@+id/pdp_home"
+        android:layout_width="54.501dp"
+        android:layout_height="96.156dp"
+        android:layout_marginStart="28.029dp"
+        android:layout_marginTop="9.343dp"
+        android:contentDescription="@string/profile_icon_home"
+        android:src="@drawable/pdp" />
+    <RelativeLayout
+        android:id="@+id/greating_child"
+        android:layout_width="105.109dp"
+        android:layout_height="41.265dp"
+        android:orientation="horizontal"
+        android:background="@drawable/greating_back"
+        android:layout_toEndOf="@+id/pdp_home"
+        android:layout_marginStart="3.504dp"
+        android:layout_marginTop="27.640dp">
 
-    <TextView
-        android:id="@+id/username"
-        style="@style/username_hello"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="139.810dp"
-        android:layout_marginTop="38dp"
-        android:text="@string/username" />
+        <TextView
+            android:id="@+id/greating"
+            style="@style/hello_MR_40_LG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="9dp"
+            android:text="@string/hello" />
 
-    <TextView
-        android:id="@+id/coins_number"
+        <TextView
+            android:id="@+id/username"
+            style="@style/username_hello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@+id/greating"
+            android:text="@string/username"
+            android:layout_marginTop="9dp"/>
+    </RelativeLayout>
+    <Button
+        android:id="@+id/button_coins"
+        android:layout_width="87.591dp"
+        android:layout_height="48.662dp"
+        android:layout_marginStart="113.674dp"
+        android:layout_marginTop="23.747dp"
+        android:layout_toEndOf="@+id/greating_child"
+        android:background="@drawable/bt_coins"
+        android:text="@string/coins"
         style="@style/coin_counter_AR_50_W"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="306.667dp"
-        android:layout_marginTop="36.571dp"
-        android:text="@string/coins"/>
+        android:paddingStart="6.229dp"
+        android:paddingEnd="3dp"
+        android:drawableEnd="@drawable/coins_small"
+        />
 
     <FrameLayout
         android:id="@+id/main_fragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="110.095dp"/>
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/greating_child"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="67dp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu"/>
 </RelativeLayout>

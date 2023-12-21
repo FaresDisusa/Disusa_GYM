@@ -1,19 +1,23 @@
 <resources>
     <string name="app_name">Disusa GYM</string>
     <!-- Home -->
+    <string name="profile_icon_home">Profile Icon</string>
     <string name="hello">Hello,</string>
     <string name="user_greeting">Hello, %s</string>
     <string name="username">User</string>
     <string name="muscle_man_home">Muscle Man</string>
     <string name="coins">49.3</string>
-    <string name="Nb_steps">%s STEPS</string>
-    <string name="day">Monday</string>
-    <string name="Nb_day_today">1</string>
-    <string name="month">Jan</string>
-    <string name="year">2024</string>
+    <string name="coins_description">Coins Icon</string>
+    <string name="steps_icon">Steps Icon</string>
+    <string name="Nb_steps">10 763 STEPS</string>
+    <string name="day">Monday, 10 nov 2023 : </string>
     <string name="workout_today">Legs + ABS</string>
-    <string name="work_but">Workouts</string>
-    <string name="shop_but">Shop</string>
+    <string name="bt_background_description">Background Button</string>
+    <string name="barre_degrade_description">Degraded Bar</string>
+    <string name="workouts_icon_description">Workouts Icon</string>
+    <string name="shop_icon_description">Shop Icon</string>
+    <string name="work_bt">Workouts</string>
+    <string name="shop_bt">Shop</string>
 
 
     <!-- Calender -->

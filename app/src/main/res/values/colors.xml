@@ -10,11 +10,13 @@
     <color name="dark_blue_gray">#2B283B</color>
     <color name="medium_violet_red">#A506DB</color>
     <color name="medium_orange_yellow">#FDB531</color>
-    <color name="dark_gray">#1F1D2A</color>
+    <color name="dark_gray">#1B1725</color>
     <color name="dark_slate_gray">#1A172C</color>
     <color name="light_gray">#AFAEB3</color>
     <color name="blue_gray">#8D8B92</color>
     <color name="light_blue_gray">#BCBBBF</color>
     <color name="slate_gray">#79777F</color>
     <color name="violet_txt">#8809CA</color>
+    <color name="blue_icon_background">#051938</color>
+    <color name="transparent">#00000000</color>
 </resources>
