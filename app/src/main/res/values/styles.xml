@@ -1,3 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <!-- large button background style of the house menu -->
+    <style name="back_bt_home_L">
+        <item name="android:layout_width">@dimen/width_bt_home_L</item>
+        <item name="android:layout_height">@dimen/height_bt_home_L_S</item>
+        <item name="android:background">@drawable/greating_back</item>
+        <item name="android:elevation">@dimen/low_elevation</item>
+    </style>
+
+    <!--small button background style of the house menu -->
+    <style name="back_bt_home_S">
+        <item name="android:layout_width">@dimen/width_bt_home_S</item>
+        <item name="android:layout_height">@dimen/height_bt_home_L_S</item>
+        <item name="android:background">@drawable/greating_back</item>
+        <item name="android:elevation">@dimen/low_elevation</item>
+    </style>
+
+    <!-- large button style of the house menu -->
+    <style name="bt_home_L">
+        <item name="android:layout_width">@dimen/width_bt_home_L</item>
+        <item name="android:layout_height">@dimen/height_bt_home_L_S</item>
+        <item name="android:background">@drawable/bt_trans_home</item>
+        <item name="android:elevation">@dimen/high_elevation</item>
+    </style>
+
+    <!--small button style of the house menu -->
+    <style name="bt_home_S">
+        <item name="android:layout_width">@dimen/width_bt_home_S</item>
+        <item name="android:layout_height">@dimen/height_bt_home_L_S</item>
+        <item name="android:background">@drawable/bt_trans_home</item>
+        <item name="android:elevation">@dimen/high_elevation</item>
+    </style>
 </resources>

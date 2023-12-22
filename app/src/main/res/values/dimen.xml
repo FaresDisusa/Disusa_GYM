@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="margin_top_header">38dp</dimen>
+    <dimen name="width_bt_home_L">346.681dp</dimen>
+    <dimen name="width_bt_home_S">171.290dp</dimen>
+    <dimen name="height_bt_home_L_S">100dp</dimen>
+    <dimen name="margin_top_home_bt">21.022dp</dimen>
+    <dimen name="low_elevation">1dp</dimen>
+    <dimen name="med_elevation">2dp</dimen>
+    <dimen name="high_elevation">3dp</dimen>
 </resources>

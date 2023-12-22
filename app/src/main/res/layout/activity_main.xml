@@ -1,72 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.percentlayout.widget.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:background="@color/dark_blue_gray">
 
     <ImageView
         android:id="@+id/pdp_home"
-        android:layout_width="54.501dp"
-        android:layout_height="96.156dp"
-        android:layout_marginStart="28.029dp"
-        android:layout_marginTop="9.343dp"
+        app:layout_widthPercent="13%"
+        app:layout_heightPercent="11%"
+        app:layout_marginTopPercent="1%"
+        app:layout_marginLeftPercent="6.76%"
         android:contentDescription="@string/profile_icon_home"
         android:src="@drawable/pdp" />
-    <RelativeLayout
-        android:id="@+id/greating_child"
-        android:layout_width="105.109dp"
-        android:layout_height="41.265dp"
-        android:orientation="horizontal"
-        android:background="@drawable/greating_back"
+
+    <ImageView
+        android:id="@+id/back_greating"
+        app:layout_widthPercent="25%"
+        app:layout_heightPercent="4.77%"
+        app:layout_marginTopPercent="3.2%"
+        app:layout_marginLeftPercent="0.83%"
         android:layout_toEndOf="@+id/pdp_home"
-        android:layout_marginStart="3.504dp"
-        android:layout_marginTop="27.640dp">
+        android:background="@drawable/greating_back"
+        android:contentDescription="@string/bt_background_description"
+        android:elevation="@dimen/low_elevation"
+        tools:ignore="RedundantDescriptionCheck" />
 
-        <TextView
-            android:id="@+id/greating"
-            style="@style/hello_MR_40_LG"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="11dp"
-            android:layout_marginTop="9dp"
-            android:text="@string/hello" />
+    <TextView
+        android:id="@+id/greating"
+        style="@style/hello_MR_40_LG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/back_greating"
+        android:layout_alignTop="@+id/back_greating"
+        app:layout_marginTopPercent="1%"
+        app:layout_marginLeftPercent="1.48%"
+        android:elevation="@dimen/med_elevation"
+        android:text="@string/hello" />
 
-        <TextView
-            android:id="@+id/username"
-            style="@style/username_hello"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
-            android:layout_toEndOf="@+id/greating"
-            android:text="@string/username"
-            android:layout_marginTop="9dp"/>
-    </RelativeLayout>
-    <Button
-        android:id="@+id/button_coins"
-        android:layout_width="87.591dp"
-        android:layout_height="48.662dp"
-        android:layout_marginStart="113.674dp"
-        android:layout_marginTop="23.747dp"
-        android:layout_toEndOf="@+id/greating_child"
+    <TextView
+        android:id="@+id/username"
+        style="@style/username_hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/back_greating"
+        app:layout_marginTopPercent="1%"
+        app:layout_marginLeftPercent="1.11%"
+        android:layout_toEndOf="@+id/greating"
+        android:elevation="@dimen/med_elevation"
+        android:text="@string/username" />
+
+    <ImageView
+        android:id="@+id/back_button_coins"
+        app:layout_widthPercent="20.83%"
+        app:layout_heightPercent="5.63%"
+        app:layout_marginTopPercent="2.75%"
+        app:layout_marginLeftPercent="27.04%"
+        android:layout_toEndOf="@+id/back_greating"
         android:background="@drawable/bt_coins"
-        android:text="@string/coins"
+        android:elevation="@dimen/low_elevation"
+        android:contentDescription="@string/bt_background_description"/>
+
+    <TextView
+        android:id="@+id/nb_coins"
         style="@style/coin_counter_AR_50_W"
-        android:paddingStart="6.229dp"
-        android:paddingEnd="3dp"
-        android:drawableEnd="@drawable/coins_small"
-        />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/back_button_coins"
+        android:layout_alignTop="@+id/back_button_coins"
+        app:layout_marginTopPercent="1.58%"
+        app:layout_marginLeftPercent="1.48%"
+        android:elevation="@dimen/med_elevation"
+        android:text="@string/coins" />
+
+    <ImageView
+        android:id="@+id/coins_icon"
+        app:layout_widthPercent="7.41%"
+        app:layout_heightPercent="3.60%"
+        app:layout_marginTopPercent="1.04%"
+        app:layout_marginLeftPercent="1.11%"
+        android:layout_toEndOf="@+id/nb_coins"
+        android:layout_alignTop="@+id/back_button_coins"
+        android:elevation="@dimen/med_elevation"
+        android:contentDescription="@string/coins_description"
+        android:src="@drawable/coins_degrade"/>
+
+    <Button
+        android:id="@+id/bt_coins"
+        app:layout_widthPercent="20.83%"
+        app:layout_heightPercent="5.63%"
+        app:layout_marginTopPercent="2.75%"
+        app:layout_marginLeftPercent="27.04%"
+        android:layout_toEndOf="@+id/back_greating"
+        android:layout_below="@+id/muscle_pic_home"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_top_home_bt"
+        android:background="@drawable/bt_trans_home" />
 
     <FrameLayout
         android:id="@+id/main_fragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/greating_child"
+        android:layout_above="@+id/nav_footer"
+        android:layout_below="@+id/pdp_home"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="67dp"
-        android:layout_marginBottom="0dp"/>
+        android:layout_marginTop="7.007dp"
+        android:layout_marginBottom="0dp" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/nav_footer"
@@ -77,4 +120,4 @@
         android:layout_marginBottom="0dp"
         android:background="@drawable/back_footer_menu"
         app:menu="@menu/footer_nav_frag" />
-</RelativeLayout>
+</androidx.percentlayout.widget.PercentRelativeLayout>

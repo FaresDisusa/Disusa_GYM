@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="RedundantDescriptionCheck, SpeakableTextPresentCheck"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -16,15 +17,11 @@
     <!-- Steps bt  -->
     <ImageView
         android:id="@+id/background_steps_bt"
-        android:layout_width="346.681dp"
-        android:layout_height="100dp"
+        style="@style/back_bt_home_L"
         android:layout_below="@+id/muscle_pic_home"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="21.022dp"
-        android:background="@drawable/greating_back"
-        android:contentDescription="@string/bt_background_description"
-        android:elevation="1dp"
-        tools:ignore="RedundantDescriptionCheck" />
+        android:layout_marginTop="@dimen/margin_top_home_bt"
+        android:contentDescription="@string/bt_background_description" />
 
     <ImageView
         android:id="@+id/steps_icon"
@@ -35,7 +32,7 @@
         android:layout_marginStart="31.144dp"
         android:layout_marginTop="24.526dp"
         android:contentDescription="@string/steps_icon"
-        android:elevation="2dp"
+        android:elevation="@dimen/med_elevation"
         android:src="@drawable/steps_degrade" />
 
     <TextView
@@ -47,32 +44,25 @@
         android:layout_alignTop="@+id/background_steps_bt"
         android:layout_marginStart="99.270dp"
         android:layout_marginTop="27dp"
-        android:elevation="2dp"
+        android:elevation="@dimen/med_elevation"
         android:text="@string/Nb_steps" />
 
     <Button
         android:id="@+id/bt_steps_today"
-        android:layout_width="346.681dp"
-        android:layout_height="100dp"
+        style="@style/bt_home_L"
         android:layout_below="@+id/muscle_pic_home"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="21.022dp"
-        android:background="@drawable/bt_trans_home"
-        android:elevation="3dp"
-        tools:ignore="SpeakableTextPresentCheck" />
+        android:layout_marginTop="@dimen/margin_top_home_bt"
+        android:background="@drawable/bt_trans_home" />
 
     <!-- Workout today bt -->
     <ImageView
         android:id="@+id/background_workout_today_bt"
-        android:layout_width="346.861dp"
-        android:layout_height="100dp"
+        style="@style/back_bt_home_L"
         android:layout_below="@+id/background_steps_bt"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="21.022dp"
-        android:background="@drawable/greating_back"
-        android:contentDescription="@string/bt_background_description"
-        android:elevation="1dp"
-        tools:ignore="RedundantDescriptionCheck" />
+        android:layout_marginTop="@dimen/margin_top_home_bt"
+        android:contentDescription="@string/bt_background_description" />
 
     <TextView
         android:id="@+id/day_workout_today_bt"
@@ -83,7 +73,7 @@
         android:layout_alignTop="@+id/background_workout_today_bt"
         android:layout_marginStart="14.015dp"
         android:layout_marginTop="9.343dp"
-        android:elevation="2dp"
+        android:elevation="@dimen/med_elevation"
         android:text="@string/day" />
 
     <ImageView
@@ -95,7 +85,7 @@
         android:layout_alignTop="@+id/background_workout_today_bt"
         android:layout_marginStart="12.847dp"
         android:layout_marginTop="7.786dp"
-        android:elevation="2dp"
+        android:elevation="@dimen/med_elevation"
         android:src="@drawable/ligne_per" />
 
     <TextView
@@ -107,32 +97,24 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40.876dp"
         android:text="@string/workout_today"
-        android:elevation="2dp"/>
+        android:elevation="@dimen/med_elevation"/>
 
     <Button
         android:id="@+id/bt_workout_today"
-        android:layout_width="346.681dp"
-        android:layout_height="100dp"
+        style="@style/bt_home_L"
         android:layout_below="@+id/background_steps_bt"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="21.022dp"
-        android:background="@drawable/bt_trans_home"
-        android:elevation="3dp"
-        tools:ignore="SpeakableTextPresentCheck"/>
+        android:layout_marginTop="@dimen/margin_top_home_bt"
+        android:background="@drawable/bt_trans_home" />
 
     <!-- Workouts bt -->
     <ImageView
         android:id="@+id/background_workouts_bt"
-        android:layout_width="171.290dp"
-        android:layout_height="100dp"
+        style="@style/back_bt_home_S"
         android:layout_below="@+id/background_workout_today_bt"
         android:layout_alignStart="@+id/background_workout_today_bt"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="26.083dp"
-        android:background="@drawable/greating_back"
-        android:contentDescription="@string/bt_background_description"
-        android:elevation="1dp"
-        tools:ignore="RedundantDescriptionCheck" />
+        android:layout_marginTop="@dimen/margin_top_home_bt"
+        android:contentDescription="@string/bt_background_description" />
 
     <ImageView
         android:id="@+id/workouts_icon"
@@ -143,7 +125,7 @@
         android:layout_marginStart="13.625dp"
         android:layout_marginTop="25.526dp"
         android:contentDescription="@string/workouts_icon_description"
-        android:elevation="2dp"
+        android:elevation="@dimen/med_elevation"
         android:src="@drawable/exercices_degrade" />
 
     <TextView
@@ -155,34 +137,25 @@
         android:layout_alignTop="@+id/background_workouts_bt"
         android:layout_marginStart="66.959dp"
         android:layout_marginTop="35dp"
-        android:elevation="2dp"
+        android:elevation="@dimen/med_elevation"
         android:text="@string/work_bt" />
 
     <Button
         android:id="@+id/bt_workouts"
-        android:layout_width="171.290dp"
-        android:layout_height="100dp"
+        style="@style/bt_home_S"
         android:layout_below="@+id/background_workout_today_bt"
         android:layout_alignStart="@+id/background_workout_today_bt"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="26.083dp"
-        android:background="@drawable/bt_trans_home"
-        android:elevation="3dp"
-        tools:ignore="SpeakableTextPresentCheck"/>
+        android:layout_marginTop="@dimen/margin_top_home_bt"
+        android:background="@drawable/bt_trans_home" />
 
     <!-- Shop bt -->
     <ImageView
         android:id="@+id/background_shop_bt"
-        android:layout_width="171.290dp"
-        android:layout_height="100dp"
+        style="@style/back_bt_home_S"
         android:layout_below="@+id/background_workout_today_bt"
         android:layout_alignEnd="@+id/background_workout_today_bt"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="26.083dp"
-        android:background="@drawable/greating_back"
-        android:contentDescription="@string/bt_background_description"
-        android:elevation="1dp"
-        tools:ignore="RedundantDescriptionCheck" />
+        android:layout_marginTop="@dimen/margin_top_home_bt"
+        android:contentDescription="@string/bt_background_description" />
 
     <ImageView
         android:id="@+id/shop_icon"
@@ -193,7 +166,7 @@
         android:layout_marginStart="13.625dp"
         android:layout_marginTop="24.526dp"
         android:contentDescription="@string/shop_icon_description"
-        android:elevation="2dp"
+        android:elevation="@dimen/med_elevation"
         android:src="@drawable/shop_degrade" />
 
     <TextView
@@ -205,18 +178,14 @@
         android:layout_alignTop="@+id/background_shop_bt"
         android:layout_marginStart="87.981dp"
         android:layout_marginTop="35dp"
-        android:elevation="2dp"
+        android:elevation="@dimen/med_elevation"
         android:text="@string/shop_bt" />
 
     <Button
         android:id="@+id/bt_shop"
-        android:layout_width="171.290dp"
-        android:layout_height="100dp"
+        style="@style/bt_home_S"
         android:layout_below="@+id/background_workout_today_bt"
         android:layout_alignEnd="@+id/background_workout_today_bt"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="26.083dp"
-        android:background="@drawable/bt_trans_home"
-        android:elevation="3dp"
-        tools:ignore="SpeakableTextPresentCheck"/>
+        android:layout_marginTop="@dimen/margin_top_home_bt"
+        android:background="@drawable/bt_trans_home" />
 </RelativeLayout>
