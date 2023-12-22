@@ -99,4 +99,12 @@
     <string name="nutrition_menu">Nutrition</string>
     <string name="subscription_menu">Subsciption</string>
     <string name="media_follow">Follow Us</string>
+
+
+    <!-- Footer nav menu -->
+    <string name="home_icon_description">Home Icon Menu</string>
+    <string name="stats_icon_description">Progress Icon Menu</string>
+    <string name="calender_icon_description">Calender Icon Menu</string>
+    <string name="account_icon_description">Account Icon Menu</string>
+    <string name="settings_icon_description">Settings Icon Menu</string>
 </resources>
