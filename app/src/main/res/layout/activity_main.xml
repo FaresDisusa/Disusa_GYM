@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.percentlayout.widget.PercentRelativeLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -8,116 +8,319 @@
     android:orientation="vertical"
     android:background="@color/dark_blue_gray">
 
+    <!-- pdp home -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/start_pdp_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.0676" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/end_pdp_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1972" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/start_pdp_h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.0108" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/end_pdp_h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1221" />
+
     <ImageView
-        android:id="@+id/pdp_home"
-        app:layout_widthPercent="13%"
-        app:layout_heightPercent="11%"
-        app:layout_marginTopPercent="1%"
-        app:layout_marginLeftPercent="6.76%"
-        android:contentDescription="@string/profile_icon_home"
-        android:src="@drawable/pdp" />
+    android:id="@+id/pdp_home"
+    android:layout_width="@dimen/none"
+    android:layout_height="@dimen/none"
+    android:contentDescription="@string/profile_icon_home"
+    android:src="@drawable/pdp"
+    app:layout_constraintBottom_toTopOf="@+id/end_pdp_h"
+    app:layout_constraintEnd_toEndOf="@+id/end_pdp_v"
+    app:layout_constraintStart_toStartOf="@+id/start_pdp_v"
+    app:layout_constraintTop_toBottomOf="@+id/start_pdp_h" />
+
+
+    <!-- Greating background -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/start_greating_back_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2056" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/end_greating_back_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.4556" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/start_greating_back_h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.0320" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/end_greating_back_h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.0797" />
 
     <ImageView
         android:id="@+id/back_greating"
-        app:layout_widthPercent="25%"
-        app:layout_heightPercent="4.77%"
-        app:layout_marginTopPercent="3.2%"
-        app:layout_marginLeftPercent="0.83%"
-        android:layout_toEndOf="@+id/pdp_home"
+        android:layout_width="@dimen/none"
+        android:layout_height="@dimen/none"
+        app:layout_constraintBottom_toTopOf="@+id/end_greating_back_h"
+        app:layout_constraintEnd_toEndOf="@+id/end_greating_back_v"
+        app:layout_constraintStart_toStartOf="@+id/start_greating_back_v"
+        app:layout_constraintTop_toBottomOf="@+id/start_greating_back_h"
         android:background="@drawable/greating_back"
         android:contentDescription="@string/bt_background_description"
         android:elevation="@dimen/low_elevation"
         tools:ignore="RedundantDescriptionCheck" />
+
+    <!-- Hello User txt -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/start_hello_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2269" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/end_hello_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3306" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/start_hello_user_h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.0419" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/end_hello_user_h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.0640" />
 
     <TextView
         android:id="@+id/greating"
         style="@style/hello_MR_40_LG"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/back_greating"
-        android:layout_alignTop="@+id/back_greating"
-        app:layout_marginTopPercent="1%"
-        app:layout_marginLeftPercent="1.48%"
+        app:layout_constraintBottom_toTopOf="@+id/end_hello_user_h"
+        app:layout_constraintEnd_toEndOf="@+id/end_hello_v"
+        app:layout_constraintStart_toStartOf="@+id/start_hello_v"
+        app:layout_constraintTop_toBottomOf="@+id/start_hello_user_h"
         android:elevation="@dimen/med_elevation"
-        android:text="@string/hello" />
+        android:text="@string/hello"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/start_user_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3417" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/end_user_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.43" />
 
     <TextView
         android:id="@+id/username"
         style="@style/username_hello"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/back_greating"
-        app:layout_marginTopPercent="1%"
-        app:layout_marginLeftPercent="1.11%"
-        android:layout_toEndOf="@+id/greating"
+        app:layout_constraintBottom_toTopOf="@+id/end_hello_user_h"
+        app:layout_constraintEnd_toEndOf="@+id/end_user_v"
+        app:layout_constraintStart_toStartOf="@+id/start_user_v"
+        app:layout_constraintTop_toBottomOf="@+id/start_hello_user_h"
         android:elevation="@dimen/med_elevation"
         android:text="@string/username" />
 
+    <!-- Coins background + bt -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/start_coin_bt_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.7324" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/end_coin_bt_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9407" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/start_coin_bt_h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.0275" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/end_coin_bt_h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.0838" />
+
     <ImageView
         android:id="@+id/back_button_coins"
-        app:layout_widthPercent="20.83%"
-        app:layout_heightPercent="5.63%"
-        app:layout_marginTopPercent="2.75%"
-        app:layout_marginLeftPercent="27.04%"
-        android:layout_toEndOf="@+id/back_greating"
+        android:layout_width="@dimen/none"
+        android:layout_height="@dimen/none"
+        app:layout_constraintBottom_toTopOf="@+id/end_coin_bt_h"
+        app:layout_constraintEnd_toEndOf="@+id/end_coin_bt_v"
+        app:layout_constraintStart_toStartOf="@+id/start_coin_bt_v"
+        app:layout_constraintTop_toBottomOf="@+id/start_coin_bt_h"
         android:background="@drawable/bt_coins"
         android:elevation="@dimen/low_elevation"
         android:contentDescription="@string/bt_background_description"/>
 
-    <TextView
-        android:id="@+id/nb_coins"
-        style="@style/coin_counter_AR_50_W"
+    <Button
+        android:id="@+id/bt_coins"
+        android:layout_width="@dimen/none"
+        android:layout_height="@dimen/none"
+        app:layout_constraintBottom_toTopOf="@+id/end_coin_bt_h"
+        app:layout_constraintEnd_toEndOf="@+id/end_coin_bt_v"
+        app:layout_constraintStart_toStartOf="@+id/start_coin_bt_v"
+        app:layout_constraintTop_toBottomOf="@+id/start_coin_bt_h"
+        android:elevation="@dimen/high_elevation"
+        android:background="@drawable/bt_coins_trans" />
+
+    <!-- Coins icon -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/start_coin_v"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/back_button_coins"
-        android:layout_alignTop="@+id/back_button_coins"
-        app:layout_marginTopPercent="1.58%"
-        app:layout_marginLeftPercent="1.48%"
-        android:elevation="@dimen/med_elevation"
-        android:text="@string/coins" />
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8481" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/end_coin_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9222" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/start_coin_h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.0378" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/end_coin_h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.0739" />
 
     <ImageView
         android:id="@+id/coins_icon"
-        app:layout_widthPercent="7.41%"
-        app:layout_heightPercent="3.60%"
-        app:layout_marginTopPercent="1.04%"
-        app:layout_marginLeftPercent="1.11%"
-        android:layout_toEndOf="@+id/nb_coins"
-        android:layout_alignTop="@+id/back_button_coins"
+        android:layout_width="@dimen/none"
+        android:layout_height="@dimen/none"
+        app:layout_constraintBottom_toTopOf="@+id/end_coin_h"
+        app:layout_constraintEnd_toEndOf="@+id/end_coin_v"
+        app:layout_constraintStart_toStartOf="@+id/start_coin_v"
+        app:layout_constraintTop_toBottomOf="@+id/start_coin_h"
         android:elevation="@dimen/med_elevation"
         android:contentDescription="@string/coins_description"
         android:src="@drawable/coins_degrade"/>
 
-    <Button
-        android:id="@+id/bt_coins"
-        app:layout_widthPercent="20.83%"
-        app:layout_heightPercent="5.63%"
-        app:layout_marginTopPercent="2.75%"
-        app:layout_marginLeftPercent="27.04%"
-        android:layout_toEndOf="@+id/back_greating"
-        android:layout_below="@+id/muscle_pic_home"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/margin_top_home_bt"
-        android:background="@drawable/bt_trans_home" />
+    <!-- Coins number txt -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/start_coin_nb_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.7450" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/end_coin_nb_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8370" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/start_coin_nb_h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.0432" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/end_coin_nb_h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.0685" />
+
+    <TextView
+        android:id="@+id/nb_coins"
+        style="@style/coin_counter_AR_50_W_txt_follow_us"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/end_coin_nb_h"
+        app:layout_constraintEnd_toEndOf="@+id/end_coin_nb_v"
+        app:layout_constraintStart_toStartOf="@+id/start_coin_nb_v"
+        app:layout_constraintTop_toBottomOf="@+id/start_coin_nb_h"
+        android:elevation="@dimen/med_elevation"
+        android:text="@string/coins" />
+
+    <!-- Body -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/start_body_h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1302" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/end_body_h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9077" />
 
     <FrameLayout
         android:id="@+id/main_fragment"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/nav_footer"
-        android:layout_below="@+id/pdp_home"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="7.007dp"
-        android:layout_marginBottom="0dp" />
+        android:layout_height="@dimen/none"
+        app:layout_constraintBottom_toTopOf="@+id/end_body_h"
+        app:layout_constraintTop_toBottomOf="@+id/start_body_h"/>
 
+    <!-- Footer -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/nav_footer"
         android:layout_width="match_parent"
-        android:layout_height="79.805dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="0dp"
+        android:layout_height="@dimen/none"
         android:background="@drawable/back_footer_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/end_body_h"
         app:menu="@menu/footer_nav_frag" />
-</androidx.percentlayout.widget.PercentRelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

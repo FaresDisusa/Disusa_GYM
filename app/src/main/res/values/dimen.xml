@@ -4,6 +4,7 @@
     <dimen name="width_bt_home_S">171.290dp</dimen>
     <dimen name="height_bt_home_L_S">100dp</dimen>
     <dimen name="margin_top_home_bt">21.022dp</dimen>
+    <dimen name="none">0dp</dimen>
     <dimen name="low_elevation">1dp</dimen>
     <dimen name="med_elevation">2dp</dimen>
     <dimen name="high_elevation">3dp</dimen>
