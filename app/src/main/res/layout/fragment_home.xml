@@ -71,15 +71,16 @@
 
     <ImageView
         android:id="@+id/background_steps_bt"
+        style="@style/back_bt_home_L"
         android:layout_width="@dimen/none"
         android:layout_height="@dimen/none"
-        style="@style/back_bt_home_L"
+        android:contentDescription="@string/bt_background_description"
+        android:elevation="@dimen/low_elevation"
         app:layout_constraintBottom_toTopOf="@+id/end_step_bt_h"
         app:layout_constraintEnd_toEndOf="@+id/end_step_bt_v"
         app:layout_constraintStart_toStartOf="@+id/start_step_bt_v"
         app:layout_constraintTop_toBottomOf="@+id/start_step_bt_h"
-        android:contentDescription="@string/bt_background_description"
-        android:elevation="@dimen/low_elevation"/>
+        tools:ignore="RedundantDescriptionCheck" />
 
     <Button
         android:id="@+id/bt_steps_today"
@@ -173,45 +174,130 @@
         app:layout_constraintEnd_toEndOf="@+id/end_step_txt_v"
         app:layout_constraintStart_toStartOf="@+id/start_step_txt_v"
         app:layout_constraintTop_toBottomOf="@+id/start_step_txt_h"
-        app:autoSizeTextType="uniform"
-        app:autoSizeMinTextSize="50sp"
-        app:autoSizeMaxTextSize="24sp"
-        android:elevation="@dimen/med_elevation"
-        android:text="@string/Nb_steps" />
-    <!--
-Workout today bt
+        android:elevation="@dimen/med_elevation" />
+
+    <!-- Workout today bt + background -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/start_workout_bt_h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6068" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/end_workout_bt_h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7194" />
+
     <ImageView
         android:id="@+id/background_workout_today_bt"
         style="@style/back_bt_home_L"
-        android:layout_below="@+id/background_steps_bt"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/margin_top_home_bt"
-        android:contentDescription="@string/bt_background_description" />
+        android:layout_width="@dimen/none"
+        android:layout_height="@dimen/none"
+        android:contentDescription="@string/bt_background_description"
+        android:elevation="@dimen/low_elevation"
+        app:layout_constraintBottom_toTopOf="@+id/end_workout_bt_h"
+        app:layout_constraintEnd_toEndOf="@+id/end_step_bt_v"
+        app:layout_constraintStart_toStartOf="@+id/start_step_bt_v"
+        app:layout_constraintTop_toBottomOf="@+id/start_workout_bt_h"
+        tools:ignore="RedundantDescriptionCheck" />
+
+    <Button
+        android:id="@+id/bt_workout_today"
+        style="@style/bt_home_L"
+        android:layout_width="@dimen/none"
+        android:layout_height="@dimen/none"
+        android:background="@drawable/bt_trans_home"
+        app:layout_constraintBottom_toTopOf="@+id/end_workout_bt_h"
+        app:layout_constraintEnd_toEndOf="@+id/end_step_bt_v"
+        app:layout_constraintStart_toStartOf="@+id/start_step_bt_v"
+        app:layout_constraintTop_toBottomOf="@+id/start_workout_bt_h"
+        android:elevation="@dimen/high_elevation"
+        tools:ignore="SpeakableTextPresentCheck"/>
+
+    <!-- Date -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/start_date_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1213" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/end_date_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.4954" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/start_date_h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6176" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/end_date_h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6374" />
 
     <TextView
         android:id="@+id/day_workout_today_bt"
         style="@style/today_date"
+        android:layout_width="@dimen/none"
+        android:layout_height="@dimen/none"
+        app:layout_constraintBottom_toTopOf="@+id/end_date_h"
+        app:layout_constraintEnd_toEndOf="@+id/end_date_v"
+        app:layout_constraintStart_toStartOf="@+id/start_date_v"
+        app:layout_constraintTop_toBottomOf="@+id/start_date_h"
+        android:elevation="@dimen/med_elevation" />
+
+    <!-- Bar -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/start_bar_v"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/background_workout_today_bt"
-        android:layout_alignTop="@+id/background_workout_today_bt"
-        android:layout_marginStart="14.015dp"
-        android:layout_marginTop="9.343dp"
-        android:elevation="@dimen/med_elevation"
-        android:text="@string/day" />
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1185" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/end_bar_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8833" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/start_bar_h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6158" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/end_bar_h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6698" />
 
     <ImageView
         android:id="@+id/bar_degrade"
         android:contentDescription="@string/barre_degrade_description"
-        android:layout_width="321.557dp"
-        android:layout_height="46.715dp"
-        android:layout_alignStart="@+id/background_workout_today_bt"
-        android:layout_alignTop="@+id/background_workout_today_bt"
-        android:layout_marginStart="12.847dp"
-        android:layout_marginTop="7.786dp"
+        android:layout_width="@dimen/none"
+        android:layout_height="@dimen/none"
+        app:layout_constraintBottom_toTopOf="@+id/end_bar_h"
+        app:layout_constraintEnd_toEndOf="@+id/end_bar_v"
+        app:layout_constraintStart_toStartOf="@+id/start_bar_v"
+        app:layout_constraintTop_toBottomOf="@+id/start_bar_h"
         android:elevation="@dimen/med_elevation"
         android:src="@drawable/ligne_per" />
-
+    <!--
     <TextView
         android:id="@+id/workout_today_muscle"
         style="@style/steps_and_workout_today_username_profil_MB_80_W"
@@ -222,14 +308,6 @@ Workout today bt
         android:layout_marginTop="40.876dp"
         android:text="@string/workout_today"
         android:elevation="@dimen/med_elevation"/>
-
-    <Button
-        android:id="@+id/bt_workout_today"
-        style="@style/bt_home_L"
-        android:layout_below="@+id/background_steps_bt"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/margin_top_home_bt"
-        android:background="@drawable/bt_trans_home" />
  Workouts bt
     <ImageView
         android:id="@+id/background_workouts_bt"
