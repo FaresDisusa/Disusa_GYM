@@ -322,5 +322,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/end_body_h"
         app:menu="@menu/footer_nav_frag"
-        app:itemIconSize="24dp"/>
+        app:itemIconSize="24dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
