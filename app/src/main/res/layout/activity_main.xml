@@ -4,7 +4,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:background="@color/dark_blue_gray">
 
@@ -88,8 +87,7 @@
         app:layout_constraintTop_toBottomOf="@+id/start_greating_back_h"
         android:background="@drawable/greating_back"
         android:contentDescription="@string/bt_background_description"
-        android:elevation="@dimen/low_elevation"
-        tools:ignore="RedundantDescriptionCheck" />
+        android:elevation="@dimen/low_elevation" />
 
     <!-- Hello User txt -->
     <androidx.constraintlayout.widget.Guideline
@@ -208,7 +206,8 @@
         app:layout_constraintStart_toStartOf="@+id/start_coin_bt_v"
         app:layout_constraintTop_toBottomOf="@+id/start_coin_bt_h"
         android:elevation="@dimen/high_elevation"
-        android:background="@drawable/bt_coins_trans" />
+        android:background="@drawable/bt_coins_trans"
+        android:contentDescription="@string/coins_bt_description"/>
 
     <!-- Coins icon -->
     <androidx.constraintlayout.widget.Guideline
@@ -322,5 +321,6 @@
         android:background="@drawable/back_footer_menu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/end_body_h"
-        app:menu="@menu/footer_nav_frag" />
+        app:menu="@menu/footer_nav_frag"
+        app:itemIconSize="24dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -32,4 +32,5 @@
         <item name="android:background">@drawable/bt_trans_home</item>
         <item name="android:elevation">@dimen/high_elevation</item>
     </style>
+
 </resources>

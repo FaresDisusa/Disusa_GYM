@@ -2,7 +2,6 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -27,7 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.5730" />
+        app:layout_constraintGuide_percent="0.4060" />
 
     <ImageView
         android:id="@+id/muscle_pic_home"
@@ -60,14 +59,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.6043" />
+        app:layout_constraintGuide_percent="0.4373" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/end_step_bt_h"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.749" />
+        app:layout_constraintGuide_percent="0.5824" />
 
     <ImageView
         android:id="@+id/background_steps_bt"
@@ -79,8 +78,7 @@
         app:layout_constraintBottom_toTopOf="@+id/end_step_bt_h"
         app:layout_constraintEnd_toEndOf="@+id/end_step_bt_v"
         app:layout_constraintStart_toStartOf="@+id/start_step_bt_v"
-        app:layout_constraintTop_toBottomOf="@+id/start_step_bt_h"
-        tools:ignore="RedundantDescriptionCheck" />
+        app:layout_constraintTop_toBottomOf="@+id/start_step_bt_h" />
 
     <Button
         android:id="@+id/bt_steps_today"
@@ -115,14 +113,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.6407" />
+        app:layout_constraintGuide_percent="0.4739" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/end_step_icon_h"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.7132" />
+        app:layout_constraintGuide_percent="0.5464" />
 
     <ImageView
         android:id="@+id/steps_icon"
@@ -156,14 +154,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.6489" />
+        app:layout_constraintGuide_percent="0.482" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/end_step_txt_h"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.7051" />
+        app:layout_constraintGuide_percent="0.5383" />
 
     <TextView
         android:id="@+id/nb_steps"
@@ -184,14 +182,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.7804" />
+        app:layout_constraintGuide_percent="0.6139" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/end_workout_bt_h"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.9252" />
+        app:layout_constraintGuide_percent="0.7587" />
 
     <ImageView
         android:id="@+id/background_workout_today_bt"
@@ -203,8 +201,7 @@
         app:layout_constraintBottom_toTopOf="@+id/end_workout_bt_h"
         app:layout_constraintEnd_toEndOf="@+id/end_step_bt_v"
         app:layout_constraintStart_toStartOf="@+id/start_step_bt_v"
-        app:layout_constraintTop_toBottomOf="@+id/start_workout_bt_h"
-        tools:ignore="RedundantDescriptionCheck" />
+        app:layout_constraintTop_toBottomOf="@+id/start_workout_bt_h" />
 
     <Button
         android:id="@+id/bt_workout_today"
@@ -239,14 +236,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.7943" />
+        app:layout_constraintGuide_percent="0.6276" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/end_date_h"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.8198" />
+        app:layout_constraintGuide_percent="0.6531" />
 
     <TextView
         android:id="@+id/day_workout_today_bt"
@@ -279,14 +276,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.7920" />
+        app:layout_constraintGuide_percent="0.6252" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/end_bar_h"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.8614" />
+        app:layout_constraintGuide_percent="0.6949" />
 
     <ImageView
         android:id="@+id/bar_degrade"
@@ -320,14 +317,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.8412" />
+        app:layout_constraintGuide_percent="0.6746" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/end_muscle_h"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.8973" />
+        app:layout_constraintGuide_percent="0.7308" />
 
     <TextView
         android:id="@+id/workout_today_muscle"
@@ -354,14 +351,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.9565" />
+        app:layout_constraintGuide_percent="0.79" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/end_workouts_bt_h"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="1.1013" />
+        app:layout_constraintGuide_percent="0.935" />
 
     <ImageView
         android:id="@+id/background_workouts_bt"
@@ -373,8 +370,7 @@
         app:layout_constraintStart_toStartOf="@+id/start_step_bt_v"
         app:layout_constraintTop_toBottomOf="@+id/start_workouts_bt_h"
         android:contentDescription="@string/bt_background_description"
-        android:elevation="@dimen/low_elevation"
-        tools:ignore="RedundantDescriptionCheck"/>
+        android:elevation="@dimen/low_elevation" />
 
     <Button
         android:id="@+id/bt_workouts"
@@ -409,14 +405,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.9930" />
+        app:layout_constraintGuide_percent="0.8265" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/end_workouts_icon_h"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="1.0654" />
+        app:layout_constraintGuide_percent="0.899" />
 
     <ImageView
         android:id="@+id/workouts_icon"
@@ -450,14 +446,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="1.0115" />
+        app:layout_constraintGuide_percent="0.8451" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/end_workouts_txt_h"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="1.0469" />
+        app:layout_constraintGuide_percent="0.8805" />
 
     <TextView
         android:id="@+id/workouts_txt"
@@ -491,8 +487,7 @@
         app:layout_constraintStart_toStartOf="@+id/start_shop_bt_v"
         app:layout_constraintTop_toBottomOf="@+id/start_workouts_bt_h"
         android:contentDescription="@string/bt_background_description"
-        android:elevation="@dimen/low_elevation"
-        tools:ignore="RedundantDescriptionCheck" />
+        android:elevation="@dimen/low_elevation" />
 
     <Button
         android:id="@+id/bt_shop"

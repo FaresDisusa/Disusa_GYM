@@ -8,11 +8,12 @@
     <string name="muscle_man_home">Muscle Man Picture</string>
     <string name="coins">49.3</string>
     <string name="coins_description">Coins Icon</string>
+    <string name="coins_bt_description">Coin Wallet</string>
     <string name="steps_icon">Steps Icon</string>
     <string name="Nb_steps">10 763 STEPS</string>
     <string name="day">Monday, 10 nov 2023 : </string>
     <string name="workout_today">Legs + ABS</string>
-    <string name="bt_background_description">Background Button</string>
+    <string name="bt_background_description">Background bt</string>
     <string name="barre_degrade_description">Degraded Bar</string>
     <string name="workouts_icon_description">Workouts Icon</string>
     <string name="steps_bt_description">Access Your Walking Data</string>
